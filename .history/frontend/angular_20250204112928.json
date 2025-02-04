@@ -7,8 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineTemplate": false,
-          "inlineStyle": false,
+          "inlineTemplate": true,
+          "inlineStyle": true,
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -46,8 +46,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -99,7 +104,6 @@
           }
         }
       }
-    }
-  },
+    }},
   "defaultProject": "frontend"
 }
